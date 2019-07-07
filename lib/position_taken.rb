@@ -4,8 +4,8 @@ Board = [" ", " ", " ", " ", " ", " ", " ", " " ," "]
 input = gets.chomp.to_i
 index = input - 1
 def position_taken?(board[index])
-  if board[index] == " "
-    true
+  if (board[index] == " ") || (board[index] == "") 
+    false
   else
     false
   end
